@@ -1,11 +1,11 @@
 import './App.css';
+import HeroSection from './Components/HeroSection';
 
 function App() {
-  const tryThis = 10;
-
   return (
     <div className='App'>
       <h1>Project news homepage</h1>
+      <HeroSection />
     </div>
   );
 }
