@@ -1,5 +1,5 @@
 import { useState } from "react"
-import menu from "../assets copy/images/icon-menu.svg"
+import menu from "../assets copy/images/icon_menu.svg"
 
 
 export default function NavMobile() {
