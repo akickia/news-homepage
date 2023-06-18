@@ -1,16 +1,24 @@
 
+
 import './App.css'
 import Header from './Components/Header'
 
+import './App.css';
+import HeroSection from './Components/HeroSection';
+
+
 function App() {
-
-
   return (
+
     <div className="App">
       <Header />
-    <h1>Project news homepage</h1>
+
+    <div className='App'>
+      
+      <HeroSection />
+
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
