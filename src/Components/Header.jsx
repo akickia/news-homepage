@@ -5,10 +5,10 @@ import NavDesktop from "./NavDesktop"
 import { useState, useEffect } from "react";
 
 export default function Header() {
-  const [isMobile, setMobile] = useState(window.innerWidth < 1000);
+  const [isMobile, setMobile] = useState(window.innerWidth < 650);
 
   const updateMedia = () => {
-    setMobile(window.innerWidth < 1000);
+    setMobile(window.innerWidth < 650);
   };
 
   useEffect(() => {
