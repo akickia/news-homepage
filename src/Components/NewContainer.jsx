@@ -4,8 +4,8 @@ import NewCard from './NewCard';
 import '../style/newContainer.css';
 
 export default function NewContainer() {
-  const [newList, setNewList] = useState();
-  setNewList(data);
+  const [newList, setNewList] = useState(data);
+  
   const newEl = newList.map((item, i) => {
     return <NewCard 
     key={i} 
