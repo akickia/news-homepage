@@ -2,8 +2,9 @@ header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
+  min-height: 6.25rem;
+  position: relative;
 }
 
 ul {
@@ -16,12 +17,20 @@ header section {
   display: flex;
   align-items: start;
   text-align: start;
+  position: absolute;
+  right: 0
 }
 
 header .nav-bar-mobile {
   max-width: 10rem;
   width: 100%;
   flex-direction: column;
+  background-color: white;
+}
+
+header .nav-bar-mobile nav {
+  max-width: 100%;
+  width: 100%
 }
 
 header .nav-bar-desktop ul {
@@ -35,6 +44,12 @@ header ul li {
   padding: 1rem;
   font-weight: 600;
   opacity: .9;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+header ul li:hover {
+  color: var(--primary-red)
 }
 
 .close-menu {

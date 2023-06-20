@@ -1,11 +1,9 @@
-
-
-export default function NewCard({text, title}) {
+export default function NewCard(props) {
   return (
     <section>
-      <h3>{title}</h3>
-      <p>{text}</p>
+      <h3>{props.title}</h3>
+      <p>{props.text}</p>
       <hr></hr>
     </section>
-  )
+  );
 }

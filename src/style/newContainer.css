@@ -1,20 +1,21 @@
 .container_section_new {
-  background-color: black;
+  background-color: var(--dark-blue);
   text-align: start;
   padding: 0.25rem 1rem;
-  color: #fffdfa;
+  color: var(--off-white);
   margin-top: 2rem;
   max-width: 25rem;
 }
 
 
 .container_section_new h2 {
-  color: rgb(234, 199, 1);
+  color: var(--primary-orange);
   font-size: 2rem;
+  padding: 1rem 0
 }
 
 .container_section_new hr {
-  opacity: .3;
+  border-color: var(--dark-grey);
   margin: 2rem 0;
 }
 
