@@ -1,7 +1,5 @@
 import './App.css';
 import Header from './Components/Header';
-
-import './App.css';
 import HeroSection from './Components/HeroSection';
 
 function App() {

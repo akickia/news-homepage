@@ -1,5 +1,7 @@
 import { useState } from "react"
 import menu from "../assets copy/images/icon_menu.svg"
+import close from "../assets copy/images/icon_menu_close.svg"
+import Nav from "./Nav"
 
 
 export default function NavMobile() {
@@ -12,18 +14,9 @@ export default function NavMobile() {
   return (
     <section className="nav-bar-mobile">
       <button className="close-menu" onClick={() => {handleBtn()}} >
-        {isOpen ? "X" : <img src={menu} />}
+        {isOpen ? <img src={close} /> : <img src={menu} />}
       </button>
-    {isOpen ? <nav>
-      <ul>
-        <li>Home</li>
-        <li>New</li>
-        <li>Popular</li>
-        <li>Trending</li>
-        <li>Categories</li>
-      </ul>
-
-    </nav> : " " }
+    {isOpen ? <Nav /> : " " }
     </section>
   )
 }
