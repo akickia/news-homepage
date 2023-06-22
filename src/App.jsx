@@ -7,8 +7,10 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      <HeroSection />
-      <NewContainer />
+      <main>
+        <HeroSection />
+        <NewContainer />
+      </main>
     </div>
   );
 }

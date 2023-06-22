@@ -21,6 +21,9 @@
 }
 
 @media screen and (min-width: 650px) {
+  .hero {
+    max-width: 65%;
+  }
   .hero_content {
     display: flex;
   }
