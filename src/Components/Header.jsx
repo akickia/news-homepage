@@ -1,8 +1,8 @@
-import logo from "../assets copy/images/logo.svg"
-import NavMobile from "./NavMobile"
-import "../style/header.css"
-import NavDesktop from "./NavDesktop"
-import { useState, useEffect } from "react";
+import logo from '../assets copy/images/logo.svg';
+import NavMobile from './NavMobile';
+import '../style/header.css';
+import NavDesktop from './NavDesktop';
+import { useState, useEffect } from 'react';
 
 export default function Header() {
   const [isMobile, setMobile] = useState(window.innerWidth < 650);
@@ -12,18 +12,14 @@ export default function Header() {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
+    window.addEventListener('resize', updateMedia);
+    return () => window.removeEventListener('resize', updateMedia);
   });
 
   return (
-    <>
     <header>
       <img src={logo} />
-      {isMobile ? 
-      <NavMobile /> :
-      <NavDesktop /> }
+      {isMobile ? <NavMobile /> : <NavDesktop />}
     </header>
-    </>
-  )
+  );
 }

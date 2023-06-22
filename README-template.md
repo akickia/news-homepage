@@ -19,6 +19,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+Kicki and Tshepiso decided to collaborate on this project as a challenge. This is the first time we work together. We created the page in React and used Git, Github and Github projects to structure our work. 
 
 ### The challenge
 
@@ -45,21 +46,23 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+We started our project with setting up a plan for how to collaborate and set up rules with esLint and prettier for consistensy. We divided the work between us and worked on small tasks until we met up again to plan ahead. We asked for reviews before merging branches and checked in with each other from time to time. 
+
+The project itself was straight forward, we decided on what components we needed and then wrote them along with styling. The site is coded mobile first and the layout is responsive. We decided to write the news in json-files even though they are tiny, but a possible development of this project can be to add more news to display and to add more pages. Right now the page is static, the project only includes the start page. 
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
+
+I, Kicki, have learned quite a lot from Tshepiso about how to structure the workflow professionally and to work with esLint and pull request templates. It was a challenge to create consistensy in all of the aspects, everything from naming classes to where to put styling (and everything in between). This has been a great experience and I'm thankful for the oportunity to collaborate like this. 
+
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
