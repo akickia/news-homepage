@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import web3Mobile from '../assets copy/images/web3_mobile.jpg';
-
+import web3Desktop from '../assets copy/images/web3_desktop.jpg';
 import '../style/hero.css';
 
 export default function HeroSection() {
@@ -17,7 +17,7 @@ export default function HeroSection() {
 
   return (
     <section className='hero'>
-      <img src={web3Mobile} />
+      {isMobile ? <img src={web3Mobile} /> : <img src={web3Desktop} />}
       <div className='hero_content'>
         <h1 className='hero_title'>The Bright Future of Web 3.0?</h1>
         <div className='hero_text'>
