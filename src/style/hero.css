@@ -1,0 +1,27 @@
+.hero {
+  background-color: red;
+}
+.hero_content {
+  background-color: yellow;
+  text-align: left;
+}
+
+.hero_title {
+  background-color: blue;
+  max-width: 85%;
+}
+
+.hero_text {
+  background-color: green;
+  max-width: 82%;
+}
+
+.hero p {
+  color: var(--dark-grey);
+}
+
+.hero button {
+  margin-top: 1rem;
+
+  letter-spacing: 0.25rem;
+}
