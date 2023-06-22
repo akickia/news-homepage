@@ -1,0 +1,34 @@
+.hero_content {
+  text-align: left;
+}
+
+.hero_title {
+  max-width: 85%;
+}
+
+.hero_text {
+  max-width: 82%;
+}
+
+.hero p {
+  color: var(--dark-grey);
+}
+
+.hero button {
+  margin-top: 1rem;
+
+  letter-spacing: 0.25rem;
+}
+
+@media screen and (min-width: 650px) {
+  .hero_content {
+    display: flex;
+  }
+  .hero_text {
+    max-width: 50%;
+    padding-top: 0.25rem;
+  }
+  .hero button {
+    margin-top: 1.25rem;
+  }
+}
