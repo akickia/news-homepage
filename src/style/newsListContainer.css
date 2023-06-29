@@ -1,0 +1,36 @@
+.container_newslist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 0;
+  color: var(--dark-grey);
+  width: 100%
+}
+
+.container_newslist section {
+  display: flex;
+  padding: 1rem 0
+}
+
+.container_newslist .article_content {
+  padding: 0 0 0 1rem;
+}
+
+.container_newslist section h2 {
+  color: var(--gray-blue);
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: .5rem;
+}
+
+.container_newslist section img {
+  max-width: 30%;
+  height: 8rem
+}
+
+@media screen and (min-width: 650px) {
+  .container_newslist section {
+    max-width: 26rem;
+    width: 100%
+  }
+}

@@ -2,13 +2,7 @@
   text-align: left;
 }
 
-.hero_title {
-  max-width: 85%;
-}
 
-.hero_text {
-  max-width: 82%;
-}
 
 .hero p {
   color: var(--dark-grey);

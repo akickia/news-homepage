@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './Components/Footer';
 import Header from './Components/Header';
 import HeroSection from './Components/HeroSection';
 import NewContainer from './Components/NewContainer';
@@ -13,6 +14,7 @@ function App() {
         <NewContainer />
         <NewsListCard />
       </main>
+      <Footer />
     </div>
   );
 }

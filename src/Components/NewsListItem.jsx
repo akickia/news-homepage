@@ -1,5 +1,3 @@
-import favicon from '../assets copy/images/favicon.png';
-
 export default function NewsListItem({ article }) {
   const { id, title, text, picture } = article;
 
@@ -14,8 +12,8 @@ export default function NewsListItem({ article }) {
     <section>
       <img src={picture} />
       <div className='article_content'>
-        <h1>{id}</h1>
-        <h2>{title}</h2>
+        <h2>{id}</h2>
+        <h3>{title}</h3>
         <p>{text}</p>
       </div>
     </section>

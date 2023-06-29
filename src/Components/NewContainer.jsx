@@ -1,12 +1,10 @@
-import { useState } from 'react';
 import data from '../assets copy/json/new.json';
 import NewCard from './NewCard';
 import '../style/newContainer.css';
 
 export default function NewContainer() {
-  const [newList, setNewList] = useState(data);
-  
-  const newEl = newList.map((item, i) => {
+
+  const newEl = data.map((item, i) => {
     return <NewCard 
     key={i} 
     title={item.title} 
