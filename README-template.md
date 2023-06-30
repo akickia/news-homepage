@@ -14,12 +14,18 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 Kicki and Tshepiso decided to collaborate on this project as a challenge. This is the first time we work together. We created the page in React and used Git, Github and Github projects to structure our work. 
+
+The lessons we hoped to learn from working on this together:
+
+- Collaborating remotely
+- technical communication
+- version control
+- project management
 
 ### The challenge
 
@@ -30,20 +36,20 @@ Users should be able to:
 
 ### Screenshot
 
-![]((https://github.com/akickia/news-homepage/blob/master/src/assets%20copy/images/NEWSWEBSITE%3AMOBILE.mov))
+#### Desktop view
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+<img width="1704" alt="NEWS-WEBSITE:DESKTOP" src="https://github.com/akickia/news-homepage/assets/95541911/ea804465-8904-42cc-9eff-685d6fdd29cc">
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+#### Mobile view
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+https://github.com/akickia/news-homepage/assets/95541911/d94eb2b5-5a2a-4fef-a6c6-0755a70d7fde
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+- Live Site URL: [Add live site URL here](https://news-homepage-fontendmentorchallenge.netlify.app/)
 
 ## My process
 We started our project with setting up a plan for how to collaborate and set up rules with esLint and prettier for consistensy. We divided the work between us and worked on small tasks until we met up again to plan ahead. We asked for reviews before merging branches and checked in with each other from time to time. 
@@ -57,58 +63,45 @@ The project itself was straight forward, we decided on what components we needed
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
 I, Kicki, have learned quite a lot from Tshepiso about how to structure the workflow professionally and to work with esLint and pull request templates. It was a challenge to create consistensy in all of the aspects, everything from naming classes to where to put styling (and everything in between). This has been a great experience and I'm thankful for the oportunity to collaborate like this. 
 
+I , Tshepiso have learnt so much technically from Kicki. I learn about conditional rendering of components along with the window event listner. It was also great working with Github projects. 
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+const [isMobile, setMobile] = useState(window.innerWidth < 650);
+
+  const updateMedia = () => {
+    setMobile(window.innerWidth < 650);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', updateMedia);
+    return () => window.removeEventListener('resize', updateMedia);
+  });
 }
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+with ore time we could implement:
+- dark mode
+- animations and hover states 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [ESLint](https://eslint.org/docs/latest/use/getting-started) 
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Github - [Tshepiso](https://github.com/tshepi-tech)
+- Github - [Kicki](https://github.com/akickia)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
